@@ -38,23 +38,3 @@ Route::group(['prefix' => 'sign'],function(){
 	Route::get('/chart', 'SignController@chart');
 	Route::get('/maps', 'SignController@maps');
 });
-
-
-
-
-
-
-
-
-
-Route::group(['prefix' => 'sign'],function(){
-	Route::get('/up', 'SignController@up');
-	Route::get('/in', 'SignController@in');
-	Route::get('/table', 'SignController@table');
-	Route::get('/element', 'SignController@element');
-	Route::get('/button', 'SignController@button');
-	Route::get('/tabs', 'SignController@tabs');
-	Route::get('/logo', 'SignController@logo');
-	Route::get('/chart', 'SignController@chart');
-	Route::get('/maps', 'SignController@maps');
-});
