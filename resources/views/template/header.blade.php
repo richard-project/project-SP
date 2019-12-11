@@ -19,7 +19,12 @@
         <li class="nav-item dropdown">
             <a class="dropdown-toggle" href="javascript:" data-toggle="dropdown">Dropdown</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="javascript:">Action</a></li>
+                <li>
+                    <form  class="form-horizontal" action="{{ url('index/cetakpdf') }}" method="POST" id="form_print"  target="_blank">
+                    {{csrf_field()}}
+                    <button data-toggle="tooltip" data-placement="bottom" data-original-title="Print PDF" style="float: center" class="btn btn-outline-dark"><i class = "fa fa-print"></i> Cetak PDF</button>&nbsp;
+                    </form>
+                </li>
                 <li><a class="dropdown-item" href="javascript:">Another action</a></li>
                 <li><a class="dropdown-item" href="javascript:">Something else here</a></li>
             </ul>
